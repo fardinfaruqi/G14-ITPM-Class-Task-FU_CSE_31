@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Form</title>
+  </head>
+  <body>
+    <h2>Create an Account</h2>
+
+    <form action="#" method="post">
+      <!-- Full Name -->
+      <label for="fullname">Full Name</label><br />
+      <input
+        type="text"
+        id="fullname"
+        name="fullname"
+        placeholder="ex: Fardin Faruqi"
+        required
+      />
+      <br /><br />
+
+      <!-- Username -->
+      <label for="username">Username</label><br />
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="ex: fardin_faruqi"
+        required
+      />
+      <br /><br />
+
+      <!-- Email -->
+      <label for="email">Email Address</label><br />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="ex: something@example.com"
+        required
+      />
+      <br /><br />
+
+      <!-- Phone -->
+      <label for="phone">Phone Number</label><br />
+      <input type="tel" id="phone" name="phone" placeholder="+8801XXXXXXXXX" />
+      <br /><br />
+
+      <!-- Date of Birth -->
+      <label for="dob">Date of Birth</label><br />
+      <input type="date" id="dob" name="dob" />
+      <br /><br />
+
+      <!-- Gender -->
+      <label>Gender</label><br />
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label>
+      <br /><br />
+
+      <!-- Password -->
+      <label for="password">Password</label><br />
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Create a password"
+        required
+      />
+      <br /><br />
+
+      <!-- Confirm Password -->
+      <label for="confirm">Confirm Password</label><br />
+      <input
+        type="password"
+        id="confirm"
+        name="confirm"
+        placeholder="Confirm your password"
+        required
+      />
+      <br /><br />
+
+      <!-- Terms -->
+      <input type="checkbox" id="terms" required />
+      <label for="terms">I agree to the Terms and Conditions</label>
+      <br /><br />
+
+      <!-- Buttons -->
+      <button type="submit">Sign Up</button>
+      <button type="reset">Clear</button>
+
+      <br /><br />
+
+      <!-- Login Link -->
+      <p>Already have an account? <a href="./login.html">Login here</a></p>
+    </form>
+  </body>
+</html>

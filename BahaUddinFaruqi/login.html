@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+  </head>
+
+  <body>
+    <h2>User Login</h2>
+
+    <form action="#" method="post">
+      <!-- Email / Username -->
+      <label for="email">Email or Username</label><br />
+      <input
+        type="text"
+        id="email"
+        name="email"
+        placeholder="Enter email or username"
+        required
+      />
+      <br /><br />
+
+      <!-- Password -->
+      <label for="password">Password</label><br />
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Enter your password"
+        required
+      />
+      <br /><br />
+
+      <!-- Show Password -->
+      <input type="checkbox" id="showPassword" />
+      <label for="showPassword">Show Password</label>
+      <br /><br />
+
+      <!-- Remember Me -->
+      <input type="checkbox" id="remember" name="remember" />
+      <label for="remember">Remember Me</label>
+      <br /><br />
+
+      <!-- Login Button -->
+      <button type="submit">Login</button>
+      <button type="reset">Clear</button>
+
+      <br /><br />
+
+      <!-- Extra links -->
+      <a href="#">Forgot Password?</a>
+      <br />
+
+      <p>Don't have an account? <a href="./signup.html">Create an Account</a></p>
+    </form>
+  </body>
+</html>
