@@ -10,13 +10,15 @@ app.use(cors());
 // GET /student - Returns student info as JSON
 app.get("/student", (req, res) => {
   const student = {
-    name: "Fardin Faruqi",
-    id: "CSE-31-001",
+    name: "Kazi Md. Baha Uddin Faruqi",
+    id: "232031035",
+    batch: "31st",
+    program: "BSc in CSE",
     department: "Computer Science & Engineering",
-    university: "Your University",
-    semester: "8th",
-    email: "fardin@example.com",
-    cgpa: 3.75,
+    university: "Feni University",
+    semester: "6th",
+    email: "232031035@feniuniversity.ac.bd",
+    cgpa: 3.55,
   };
 
   res.json(student);
