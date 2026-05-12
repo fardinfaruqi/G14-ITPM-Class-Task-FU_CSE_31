@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const students = require("./students");
 
 const app = express();
 const PORT = 3000;
@@ -7,21 +8,9 @@ const PORT = 3000;
 // Enable CORS so the frontend can fetch data from this server
 app.use(cors());
 
-// GET /student - Returns student info as JSON
+// GET /student - Returns all students' info as JSON
 app.get("/student", (req, res) => {
-  const student = {
-    name: "Kazi Md. Baha Uddin Faruqi",
-    id: "232031035",
-    batch: "31st",
-    program: "BSc in CSE",
-    department: "Computer Science & Engineering",
-    university: "Feni University",
-    semester: "6th",
-    email: "232031035@feniuniversity.ac.bd",
-    cgpa: 3.55,
-  };
-
-  res.json(student);
+  res.json(students);
 });
 
 app.listen(PORT, () => {
